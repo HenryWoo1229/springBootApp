@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -21,5 +22,12 @@ public class MyController {
         log.debug("POST 请求过来了");
         int code = myService.insertData(appDao);
         return code > 0 ? "SUCCESS" : "FAILED";
+    }
+
+    @RequestMapping("/success")
+    public String success(){
+        // 模板引擎自动组装页面 classpath:/templates/success.html
+        // 注意不能有 @ResponseBody，否则返回字符串了
+        return "success";
     }
 }

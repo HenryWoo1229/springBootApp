@@ -21,3 +21,9 @@ mybatis:
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath*:mybatis/**/*Mapper.xml
   type-aliases-package: com.henrywoo.springbootapp.mapper
+
+global:
+  name: wuhao${random.int}
+  age: 30
+  gender: 1
+  description: ${global.name}-${global.age}-${global.gender}-${global.hello:helloworld}
