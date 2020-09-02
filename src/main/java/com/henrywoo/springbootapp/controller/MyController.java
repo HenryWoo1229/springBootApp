@@ -5,10 +5,7 @@ import com.henrywoo.springbootapp.service.MyService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @Slf4j
@@ -29,5 +26,10 @@ public class MyController {
         // 模板引擎自动组装页面 classpath:/templates/success.html
         // 注意不能有 @ResponseBody，否则返回字符串了
         return "success";
+    }
+
+    @GetMapping({"/", "/index"})
+    public String index(){
+        return "index";
     }
 }
