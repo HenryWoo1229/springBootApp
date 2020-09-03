@@ -27,9 +27,4 @@ public class MyController {
         // 注意不能有 @ResponseBody，否则返回字符串了
         return "success";
     }
-
-    @GetMapping({"/", "/index"})
-    public String index(){
-        return "index";
-    }
 }

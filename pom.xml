@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <!-- 通过此处填写版本号可以修改 starter 中某个依赖的默认版本 -->
     </properties>
 
     <dependencies>
