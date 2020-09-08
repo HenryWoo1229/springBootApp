@@ -1,6 +1,7 @@
 package com.henrywoo.springbootapp.bean;
 
-import org.springframework.context.annotation.Scope;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * @Author: Wuhao
@@ -8,7 +9,11 @@ import org.springframework.context.annotation.Scope;
  * @Description: TODO
  * @Version: 1.0
  */
+@Getter
+@Setter
 public class Blue {
+    private int flag = 0;
+
     public Blue() {
         System.out.println("Blue loading");
     }

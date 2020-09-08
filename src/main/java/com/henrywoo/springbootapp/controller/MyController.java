@@ -1,5 +1,6 @@
 package com.henrywoo.springbootapp.controller;
 
+import com.henrywoo.springbootapp.bean.Blue;
 import com.henrywoo.springbootapp.dao.AppDao;
 import com.henrywoo.springbootapp.service.MyService;
 import lombok.extern.slf4j.Slf4j;

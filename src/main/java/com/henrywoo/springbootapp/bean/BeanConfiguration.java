@@ -1,9 +1,6 @@
 package com.henrywoo.springbootapp.bean;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 
 /**
  * @Author: Wuhao
@@ -24,6 +21,21 @@ public class BeanConfiguration {
 //    @Bean(initMethod = "init", destroyMethod = "destroy")
 //    public BeanLifeCycleAnnotation beanLifeCycle(){
 //        return new BeanLifeCycleAnnotation();
+//    }
+
+//    @Bean()
+//    public Blue blue(){
+//        System.out.println("not primary blue");
+//        return new Blue();
+//    }
+//
+//    @Primary
+//    @Bean
+//    public Blue blue2(){
+//        System.out.println( "primary blue...");
+//        Blue blue = new Blue();
+//        blue.setFlag(2);
+//        return blue;
 //    }
 
     @Bean
