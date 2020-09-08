@@ -24,8 +24,8 @@ import java.util.Map;
 public class DruidConfig {
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
-    public DataSource druid(){
-        return  new DruidDataSource();
+    public DataSource druid() {
+        return new DruidDataSource();
     }
 
     //配置Druid的监控
